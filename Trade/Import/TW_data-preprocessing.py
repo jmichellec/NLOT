@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
 
 import pandas as pd
 import numpy as np
@@ -41,8 +39,6 @@ def transform_excel(file, million=0):
     df_tw_new.to_csv(file.split('.')[0]+'.tsv', index=False, sep='\t')
     return df_tw_new
 
-
-# In[ ]:
 
 
 # Excels are in USD, Import
