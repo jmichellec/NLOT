@@ -5,7 +5,7 @@ This project was part of my internship at the Netherlands Office Taipei. Researc
 ## Data
 All data is open source.
 - CBS data (import, dependencies)
-- Taiwan Trade Office data (export); uses Python script to preprocess data
+- Taiwan Trade Office data (export); uses Python script (TW_data-preprocessing.py) to preprocess data. Columns with exchange rate is added manually.
 - Patents from Lens.org, counted by simple families; uses Python script to aggregate the families
 
 
