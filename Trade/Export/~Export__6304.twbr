@@ -562,7 +562,7 @@
             </map>
           </encoding>
           <encoding attr='color' field='[SHORT_CODE (group)]&#10;[:Measure Names]' type='palette'>
-            <map to='#a64122'>
+            <map to='#9e3a26'>
               <multibucket>
                 <bucket>&quot;Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor boules or wafers, semiconductor devices, electronic integrated circuits or flat panel displays&quot;</bucket>
                 <bucket>&quot;[federated.0s0vjv70ct4q4s13fxmgn1x1r5yd].[sum:Export value in EUR:qk]&quot;</bucket>
@@ -1334,11 +1334,18 @@
               <text column='[federated.0s0vjv70ct4q4s13fxmgn1x1r5yd].[sum:SHARE(%):qk]' />
               <color column='[federated.0s0vjv70ct4q4s13fxmgn1x1r5yd].[:Measure Names]' />
             </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'>&lt;</run>
+                <run fontcolor='#ffffff'>[federated.0s0vjv70ct4q4s13fxmgn1x1r5yd].[sum:SHARE(%):qk]</run>
+                <run fontcolor='#ffffff'>&gt;</run>
+              </formatted-text>
+            </customized-label>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-show' value='true' />
-                <format attr='mark-transparency' value='201' />
+                <format attr='mark-transparency' value='255' />
               </style-rule>
               <style-rule element='pane'>
                 <format attr='minwidth' value='-1' />
@@ -1795,7 +1802,7 @@
       </cards>
       <simple-id uuid='{1130EF5D-3F45-43D3-978F-2148C22F1BF3}' />
     </window>
-    <window class='worksheet' name='Sheet 1 (2)'>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1823,7 +1830,7 @@
       </cards>
       <simple-id uuid='{1D1D22C4-8F8C-4FD2-90FB-554BDFD4B17B}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 1 (3)'>
+    <window class='worksheet' name='Sheet 1 (3)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
