@@ -1,7 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
+"""
+After downloading files from TW trade data office and putting them in the same folder,
+this code can be used to concatenate all files together and clean the files.
+Exchange rate etc. or calculations from USD to EUR needs to be done manually or by adaptation of this code.
+"""
 import pandas as pd
 import os
 
@@ -37,28 +38,30 @@ def preprocess_tw_dfs(df_tw, million=0):
     return df_tw    # remove empty rows
 
 
+def main():
+    # Excels are in USD
+    folder = "TW_export_data-2018-2022"
+    path = os.listdir(folder)
+    df_excels = []
 
-# Excels are in USD, Import
+    excels_filters = []
+    for file in path:
+        if 'Rb_4' in file:
+            if file.endswith('.xlsx'):
+                name = folder + '//' + file
+                excels_filters.append(name)
+    for file in excels_filters:
+        df_tw_new = transform_excel(file, million=1)
+        df_excels.append(df_tw_new)
 
-folder = "Downloaded_data"
-path = os.listdir(folder)
-df_excels = []
 
-excels_filters = []
-for file in path:
-    if 'Rb_4' in file:
-        if file.endswith('.xlsx'):
-            name = folder + '//' + file
-            excels_filters.append(name)
-for file in excels_filters:
-    df_tw_new = transform_excel(file, million=1)
-    df_excels.append(df_tw_new) 
-        
-df_2018 = df_excels[0]
-df_2019 = df_excels[1]
-df_2020 = df_excels[2]
-df_2021 = df_excels[3]
-df_2022 = df_excels[4]
-df_excels = pd.concat(df_excels)
-df_excels.to_excel("Export-all-updated.xlsx")
+    # df_2018 = df_excels[0]
+    # df_2019 = df_excels[1]
+    # df_2020 = df_excels[2]
+    # df_2021 = df_excels[3]
+    # df_2022 = df_excels[4]
+    df_excels = pd.concat(df_excels)
+    df_excels.to_excel("Export-all-updated-USD.xlsx")
 
+if __name__ == "__main__":
+    main()
