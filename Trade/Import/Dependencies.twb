@@ -386,30 +386,30 @@
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
       <style>
         <style-rule element='mark'>
-          <encoding attr='color' field='[none:Countries:nk]' type='palette'>
-            <map to='#4e79a7'>
+          <encoding attr='color' field='[none:Countries:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
               <bucket>&quot;Taiwan&quot;</bucket>
             </map>
-            <map to='#59a14f'>
+            <map to='#57606c'>
               <bucket>&quot;Japan&quot;</bucket>
             </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;Germany&quot;</bucket>
+            <map to='#5fa2ce'>
+              <bucket>&quot;United States&quot;</bucket>
             </map>
-            <map to='#9c755f'>
-              <bucket>&quot;South Korea&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;United Kingdom&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;China&quot;</bucket>
-            </map>
-            <map to='#e15759'>
+            <map to='#7b848f'>
               <bucket>&quot;France&quot;</bucket>
             </map>
-            <map to='#ff9da7'>
-              <bucket>&quot;United States&quot;</bucket>
+            <map to='#a3acb9'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;China&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1189,7 +1189,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='89'>
-    <window class='worksheet' maximized='true' name='Dependencies (combined)'>
+    <window class='worksheet' name='Dependencies (combined)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1287,7 +1287,7 @@
       </viewpoint>
       <simple-id uuid='{E7E9BE37-839F-4B42-B9AD-DE11D6B12C27}' />
     </window>
-    <window class='worksheet' name='Comparison other countries'>
+    <window class='worksheet' maximized='true' name='Comparison other countries'>
       <cards>
         <edge name='left'>
           <strip size='160'>
